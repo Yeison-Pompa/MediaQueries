@@ -7,3 +7,19 @@ body {
     "footer";
   min-height: 100vh;
 }
+
+menu{
+    grid-area: menu;
+}
+
+header{
+    grid-area: header;
+}
+
+main{
+    grid-area: main;
+}
+
+footer{
+    grid-area: footer;
+}
