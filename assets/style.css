@@ -1,0 +1,9 @@
+body {
+  display: grid;
+  grid-template-areas:
+    "menu"
+    "header"
+    "main"
+    "footer";
+  min-height: 100vh;
+}
