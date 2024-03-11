@@ -34,14 +34,22 @@ main{
 
 .card{
 display: flex;
-padding: 10px;
 border-radius: 8px;
 text-align: center;
+gap: 20px;
 }
 
 .card-img img{
   width: 100%;
   border-radius: 8px 8px 0 0;
+  
+}
+
+.card-content{
+  padding: 10px;
+ 
+
+
 
 }
 
@@ -55,11 +63,24 @@ text-align: center;
   
 
 }
+.barra li{
+  list-style: none;
+}
+.barra a{
+  justify-content: center;
+  
+  text-decoration: none;
+  color: white;
+}
 
 footer{
+    display: flex;
     grid-area: footer;
     padding: 10px;
     border: 1px solid white;
+    background-color: #f11;
+    color: white;
+    justify-content: center;
 }
 
 
@@ -85,4 +106,30 @@ footer{
 .parrafo{
 display: flex;
 align-items: center;
+}
+
+
+@media(max-width: 576px){
+  nav.barra{
+    display: none;
+  }
+}
+
+@media (min-width: 576px){
+
+  body{
+    grid-template-areas: 
+    "header aside aside"
+    "header main main"
+    "footer main main";
+  }
+
+  main.products{
+    display: flex;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    gap: 20px;
+    border: 1px solid #f11;
+
+  }
 }
